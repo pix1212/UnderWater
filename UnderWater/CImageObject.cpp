@@ -17,9 +17,22 @@ CImageObject* CImageObject::Clone()
 
 void CImageObject::update()
 {
-	if (nullptr != m_pImg)		//이미지 없으면 출력 안함
+}
+
+void CImageObject::render()
+{
+	if (nullptr == m_pImg)		//이미지 없으면 출력 안함
 		return;
 
+
+	/*CRenderManager::getInst()->RenderRectangle(
+		GetPos().x
+		, GetPos().y
+		, GetPos().x + GetScale().x
+		, GetPos().y + GetScale().y
+	);*/
+
+	
 	CRenderManager::getInst()->RenderImage(
 		m_pImg
 		, GetPos().x
@@ -27,6 +40,7 @@ void CImageObject::update()
 		, GetPos().x + GetScale().x
 		, GetPos().y + GetScale().y
 	);
+	
 }
 
 void CImageObject::Load(const wstring& strkey, const wstring& strpath)
