@@ -76,6 +76,9 @@
     <Filter Include="Scene\Title_Scene">
       <UniqueIdentifier>{4e87b6b2-ec48-4dc8-9260-c168d4e29c19}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object\Title">
+      <UniqueIdentifier>{edab9eea-abe9-4f9d-8fea-a8abb24d6af6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -198,6 +201,9 @@
     <ClInclude Include="CScene_Title.h">
       <Filter>Scene\Title_Scene</Filter>
     </ClInclude>
+    <ClInclude Include="CImageObject.h">
+      <Filter>Object\Title</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="UnderWater.cpp">
@@ -301,6 +307,9 @@
     </ClCompile>
     <ClCompile Include="CScene_Title.cpp">
       <Filter>Scene\Title_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageObject.cpp">
+      <Filter>Object\Title</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -167,7 +167,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    // 실제 창이 크기에 맞게 나온다.
    AdjustWindowRect(&rc, WINSTYLE, false);
    //위 RECT정보로 윈도우 사이즈를 셋팅하자.
-   SetWindowPos(hWnd, NULL, WINSTARTX, WINSTARTY, (rc.right - rc.left), (rc.bottom - rc.top), SWP_NOZORDER | SWP_NOMOVE);
+   SetWindowPos(hWnd, NULL, 640, 479, (rc.right - rc.left), (rc.bottom - rc.top), SWP_NOZORDER | SWP_NOMOVE);
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
