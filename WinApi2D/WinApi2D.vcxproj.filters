@@ -73,6 +73,9 @@
     <Filter Include="Engine\Component\AI\State">
       <UniqueIdentifier>{ce728e5c-3022-41f1-a14b-029c3d2661bf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object\TItle">
+      <UniqueIdentifier>{0dabe69d-0e02-48e9-a030-4f8ca766d123}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -195,6 +198,9 @@
     <ClInclude Include="CScene_Title.h">
       <Filter>Scene</Filter>
     </ClInclude>
+    <ClInclude Include="CImageObject.h">
+      <Filter>Object\TItle</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="WinApi2D.cpp">
@@ -298,6 +304,9 @@
     </ClCompile>
     <ClCompile Include="CScene_Title.cpp">
       <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageObject.cpp">
+      <Filter>Object\TItle</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
