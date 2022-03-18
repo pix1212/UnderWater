@@ -157,6 +157,8 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
         return FALSE;
     }
 
+
+
    // 실제 윈도우 크기를 구하기 위해 AdjustWindowRect 사용
    RECT rc;
    rc.left = 0;
@@ -167,12 +169,16 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    // 실제 창이 크기에 맞게 나온다.
    AdjustWindowRect(&rc, WINSTYLE, false);
    //위 RECT정보로 윈도우 사이즈를 셋팅하자.
-   SetWindowPos(hWnd, NULL, WINSTARTX, WINSTARTY, (rc.right - rc.left), (rc.bottom - rc.top), SWP_NOZORDER | SWP_NOMOVE);
+   SetWindowPos(hWnd, NULL, WINSTARTX, WINSTARTY, 640, 479, SWP_NOZORDER | SWP_NOMOVE);
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
 
     return TRUE;
+
+
+
+
 }
 
 // WndProc : 메세지를 운영체제에 전달한다. 강제로 운영체제가 호출함.
