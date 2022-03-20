@@ -15,10 +15,10 @@ void CScene_Title::Enter()
 	//TODO:
 	//0. 로고 출력용 오브젝트 출력
 	CImageObject* logoObject = new CImageObject;
-	logoObject->Load(L"LogoImage", L"texture\\Title.bmp"); 
+	logoObject->Load(L"LogoImage", L"texture\\Title_enter.bmp"); 
 
 	logoObject->SetPos(fPoint(0.f, 0.f));
-	logoObject->SetScale(fPoint(640.f, 479.f));
+	logoObject->SetScale(fPoint(640.f, 480.f));
 	AddObject(logoObject, GROUP_GAMEOBJ::BACKGROUND);
 
 	//1. 배경 출력
