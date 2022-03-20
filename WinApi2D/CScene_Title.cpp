@@ -13,7 +13,12 @@ CScene_Title::~CScene_Title()
 
 void ClickStartButton(DWORD_PTR, DWORD_PTR)
 {
-	ChangeScn(GROUP_SCENE::STAGE_01);
+	if (KeyDown(VK_SPACE))
+	{
+		ChangeScn(GROUP_SCENE::STAGE_01);
+
+	}
+		
 }
 
 void ClickExitButton(DWORD_PTR, DWORD_PTR)
