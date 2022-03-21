@@ -160,16 +160,13 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
 
    // 실제 윈도우 크기를 구하기 위해 AdjustWindowRect 사용
-   RECT rc;
-   rc.left = 0;
-   rc.top = 0;
-   rc.right = WINSIZEX;
-   rc.bottom = WINSIZEY;
+    RECT rc = { 0, 0, 640, 480 };
 
    // 실제 창이 크기에 맞게 나온다.
-   AdjustWindowRect(&rc, WINSTYLE, false);
+   AdjustWindowRect(&rc, WS_OVERLAPPEDWINDOW, FALSE);
+
    //위 RECT정보로 윈도우 사이즈를 셋팅하자.
-   SetWindowPos(hWnd, NULL, WINSTARTX, WINSTARTY, 656, 512, SWP_NOZORDER | SWP_NOMOVE);
+   SetWindowPos(hWnd, HWND_TOPMOST, WINSTARTX, WINSTARTY, rc.right-rc.left, rc.bottom-rc.top, SWP_NOZORDER | SWP_NOMOVE);
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);

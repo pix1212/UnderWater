@@ -85,6 +85,9 @@
     <Filter Include="Object\Button">
       <UniqueIdentifier>{b7f0761b-70fa-4d81-adfa-fadbe5cd2ade}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Object\Character\Player">
+      <UniqueIdentifier>{2813079a-1438-4beb-97e7-505e4be60348}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -207,14 +210,17 @@
     <ClInclude Include="CImageObject.h">
       <Filter>Object\TItle</Filter>
     </ClInclude>
-    <ClInclude Include="CScene_Stage01.h">
-      <Filter>Scene\Scene_State01</Filter>
-    </ClInclude>
     <ClInclude Include="CScene_Title.h">
       <Filter>Scene\Scene_Title</Filter>
     </ClInclude>
     <ClInclude Include="CImageButton.h">
       <Filter>Object\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene_Stage01.h">
+      <Filter>Scene\Scene_State01</Filter>
+    </ClInclude>
+    <ClInclude Include="CPlayer.h">
+      <Filter>Object\Character\Player</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -320,14 +326,17 @@
     <ClCompile Include="CImageObject.cpp">
       <Filter>Object\TItle</Filter>
     </ClCompile>
-    <ClCompile Include="CScene_Stage01.cpp">
-      <Filter>Scene\Scene_State01</Filter>
-    </ClCompile>
     <ClCompile Include="CScene_Title.cpp">
       <Filter>Scene\Scene_Title</Filter>
     </ClCompile>
     <ClCompile Include="CImageButton.cpp">
       <Filter>Object\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene_Stage01.cpp">
+      <Filter>Scene\Scene_State01</Filter>
+    </ClCompile>
+    <ClCompile Include="CPlayer.cpp">
+      <Filter>Object\Character\Player</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

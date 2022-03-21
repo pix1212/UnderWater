@@ -11,12 +11,10 @@ CScene_Title::~CScene_Title()
 {
 }
 
-void ClickStartButton(DWORD_PTR, DWORD_PTR)
+void EnterButton(DWORD_PTR, DWORD_PTR)
 {
-	if (KeyDown(VK_RETURN))
-	{
+	if (KeyDown(VK_RETURN)) {
 		ChangeScn(GROUP_SCENE::STAGE_01);
-
 	}
 		
 }
@@ -32,7 +30,7 @@ void CScene_Title::Enter()
 	
 	// 0. 배경 출력
 	CImageObject* backgroundObject = new CImageObject;
-	backgroundObject->Load(L"BackImage", L"texture\\Title_enter.bmp");
+	backgroundObject->Load(L"BackImage", L"texture\\Title.bmp");
 
 	backgroundObject->SetPos(fPoint(0.f, 0.f));
 	backgroundObject->SetScale(fPoint(640.f, 480.f));
