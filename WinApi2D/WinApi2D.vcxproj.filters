@@ -76,6 +76,15 @@
     <Filter Include="Object\TItle">
       <UniqueIdentifier>{0dabe69d-0e02-48e9-a030-4f8ca766d123}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Scene\Scene_Title">
+      <UniqueIdentifier>{a5d56d29-b390-45b4-8124-63db8d090a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Scene_State01">
+      <UniqueIdentifier>{3a1caae0-b61d-46d4-8bdf-e95141d2833e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Button">
+      <UniqueIdentifier>{b7f0761b-70fa-4d81-adfa-fadbe5cd2ade}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -195,17 +204,17 @@
     <ClInclude Include="CIdleState.h">
       <Filter>Engine\Component\AI\State</Filter>
     </ClInclude>
-    <ClInclude Include="CScene_Title.h">
-      <Filter>Scene</Filter>
-    </ClInclude>
     <ClInclude Include="CImageObject.h">
       <Filter>Object\TItle</Filter>
     </ClInclude>
-    <ClInclude Include="CImageButton.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="CScene_Stage01.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>Scene\Scene_State01</Filter>
+    </ClInclude>
+    <ClInclude Include="CScene_Title.h">
+      <Filter>Scene\Scene_Title</Filter>
+    </ClInclude>
+    <ClInclude Include="CImageButton.h">
+      <Filter>Object\Button</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -308,17 +317,17 @@
     <ClCompile Include="CIdleState.cpp">
       <Filter>Engine\Component\AI\State</Filter>
     </ClCompile>
-    <ClCompile Include="CScene_Title.cpp">
-      <Filter>Scene</Filter>
-    </ClCompile>
     <ClCompile Include="CImageObject.cpp">
       <Filter>Object\TItle</Filter>
     </ClCompile>
-    <ClCompile Include="CImageButton.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="CScene_Stage01.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>Scene\Scene_State01</Filter>
+    </ClCompile>
+    <ClCompile Include="CScene_Title.cpp">
+      <Filter>Scene\Scene_Title</Filter>
+    </ClCompile>
+    <ClCompile Include="CImageButton.cpp">
+      <Filter>Object\Button</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
